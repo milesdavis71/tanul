@@ -1,0 +1,22 @@
+.bellows .bellows-menu-item.bellows-show-more-toggle{
+	visibility:visible;
+	max-height:none;
+	opacity:1;
+	transition:.1s opacity ease;
+}
+.bellows .bellows-menu-item.bellows-show-more-toggle.bellows-show-less{
+	visibility: hidden;
+	max-height:0;
+	opacity: 0;
+}
+.bellows .bellows-menu-item.bellows-show-more-toggle ~ .bellows-menu-item{
+	visibility: hidden;
+	max-height:0;
+	opacity:0;
+	transition:.5s opacity ease;
+}
+.bellows .bellows-menu-item.bellows-show-more-toggle.bellows-show-less ~ .bellows-menu-item{
+	visibility:visible;
+	max-height:none;
+	opacity:1;
+}

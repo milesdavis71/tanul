@@ -1,0 +1,98 @@
+/* Skin */
+.bellows.bellows-skin-@{skinName}{
+	background:@background;
+	box-shadow:@menu_box_shadow;
+	//border-bottom:@top_level_border_bottom;
+
+	.bellows-nav{
+
+		//All targets
+		.bellows-target,
+		.bellows-custom-content{
+			color:@color;
+		}
+
+		//Top level 
+		.bellows-item-level-0{
+
+			//border-bottom:@top_level_border_bottom;
+
+			//Targets
+			> .bellows-target,
+			> .bellows-custom-content{
+				border-bottom:@top_level_border_bottom;
+				//border-top:@top_level_border_bottom;
+			}
+
+			&.bellows-has-custom-content > .bellows-target{
+				border-bottom:none;
+			}
+
+			//targets - hover
+			> .bellows-target:hover{
+				background:@top_level_background_hover;
+			}
+
+			//Targets - active
+			&.bellows-active > .bellows-target{
+				background:@top_level_background_active;
+			}
+
+			//Targets - current
+			&.bellows-current-menu-item > .bellows-target,
+			&.bellows-current-menu-ancestor > .bellows-target{
+				background:@top_level_background_current;
+			}
+		
+
+			//Target subtoggles
+			> .bellows-target .bellows-subtoggle{
+				background:@top_level_subtoggle_background;
+			}
+		}
+
+		// .bellows-item-level-0:first-child > .bellows-target{
+		// 	//border-bottom:@top_level_border_bottom;
+		// 	border-top:none;
+		// }
+
+		//Submenu
+		.bellows-submenu{
+
+			background:@submenu_background;
+			
+			//Submenu targets
+			.bellows-target,
+			.bellows-custom-content,
+			.bellows-widget .textwidget{
+				color:@submenu_target_color;
+				//border-top:@submenu_target_border;
+				border-bottom:@submenu_target_border;
+			}
+			.bellows-has-custom-content > .bellows-target{
+				border-bottom:none;
+			}
+			
+			//Submenu targets - hover
+			.bellows-target:hover{
+				background:@submenu_background_hover;
+				color:@submenu_target_color_hover;
+			}
+
+			//Submenu targets - current
+			.bellows-current-menu-item > .bellows-target,
+			.bellows-current-menu-ancestor > .bellows-target{
+				background:@submenu_background_current;
+			}
+
+			// .bellows-custom-content{
+			// 	color:@submenu_target_color;
+			// }
+		}
+	}
+}
+.bellows-menu-toggle.bellows-menu-toggle-skin-@{skinName}{
+	background:@background;
+	box-shadow:@menu_box_shadow;
+	color:@color;
+}

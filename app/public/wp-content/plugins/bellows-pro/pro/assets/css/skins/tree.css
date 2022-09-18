@@ -1,0 +1,59 @@
+.bellows.bellows-skin-tree {
+  --bellows-item-padding-v: 15px;
+  --bellows-indent-level-offset: 0;
+  --bellows-tree-toggle-item-gap: 0px;
+}
+/* Skin */
+.bellows.bellows-skin-tree {
+  background: none;
+  box-shadow: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-target,
+.bellows.bellows-skin-tree .bellows-nav .bellows-custom-content {
+  color: #333;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0 > .bellows-target,
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0 > .bellows-custom-content {
+  border-bottom: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0.bellows-has-custom-content > .bellows-target {
+  border-bottom: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0 > .bellows-target:hover {
+  background: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0.bellows-active > .bellows-target {
+  background: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0.bellows-current-menu-item > .bellows-target,
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0.bellows-current-menu-ancestor > .bellows-target {
+  background: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-item-level-0 > .bellows-target .bellows-subtoggle {
+  background: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu {
+  background: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu .bellows-target,
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu .bellows-custom-content,
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu .bellows-widget .textwidget {
+  color: #777;
+  border-bottom: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu .bellows-has-custom-content > .bellows-target {
+  border-bottom: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu .bellows-target:hover {
+  background: none;
+  color: none;
+}
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu .bellows-current-menu-item > .bellows-target,
+.bellows.bellows-skin-tree .bellows-nav .bellows-submenu .bellows-current-menu-ancestor > .bellows-target {
+  background: none;
+}
+.bellows-menu-toggle.bellows-menu-toggle-skin-tree {
+  background: none;
+  box-shadow: none;
+  color: #333;
+}

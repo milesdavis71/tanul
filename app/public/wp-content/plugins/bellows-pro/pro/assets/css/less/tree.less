@@ -1,0 +1,39 @@
+.bellows-type-tree{
+	--bellows-toggle-width:40px;
+	--bellows-tree-toggle-w: var(--bellows-toggle-width);
+	--bellows-tree-toggle-item-gap: var( --bellows-item-padding-h );
+	--bellows-tree-toggle-sub-item-gap: var( --bellows-tree-toggle-item-gap );
+	
+
+	.bellows-nav .bellows-item-level-0 {
+		> .bellows-target,
+		> .bellows-custom-content.bellows-custom-content-padded,
+		> .bellows-target.bellows-target-w-image > .bellows-target-text,
+		> .bellows-target.bellows-target-w-image > .bellows-image.bellows-image-padded{
+			padding-left: calc( var( --bellows-tree-toggle-item-gap ) + var( --bellows-tree-toggle-w ) );
+			padding-right: var( --bellows-item-padding-h );
+		}
+
+
+		.bellows-subtoggle{
+			right:auto;
+			left: 0;
+		}
+	}
+	.bellows-nav .bellows-submenu {
+
+		.bellows-target,
+		.bellows-custom-content.bellows-custom-content-padded,
+		.bellows-target.bellows-target-w-image > .bellows-target-text,
+		.bellows-target.bellows-target-w-image > .bellows-image.bellows-image-padded{
+			padding-left: calc( var( --bellows-tree-toggle-sub-item-gap ) + ( var( --bellows-indent ) * ( var( --bellows-level ) - var( --bellows-indent-level-offset ) ) ) + var( --bellows-tree-toggle-w ) );
+			padding-right: var( --bellows-sub-item-padding-h );
+		}
+
+		.bellows-subtoggle{
+			left: calc( var( --bellows-tree-toggle-sub-item-gap  ) + ( var( --bellows-indent ) * ( var( --bellows-level ) - var( --bellows-indent-level-offset ) ) ) );
+		}
+	}
+
+
+}
